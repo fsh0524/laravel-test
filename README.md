@@ -41,17 +41,30 @@ Reference: https://laradock.io/getting-started/
 	NGINX_HOST_HTTPS_PORT=443
 	```
 
-#### Usage
+5. In laradock's directory, build the environment and run it using docker-compose.
+	```bash
+	docker-compose up -d nginx
+	```
+	Enter the Workspace container, to execute commands like (Artisan, Composer, PHPUnit, Gulp, …)
+	```bash
+	# With laradock user
+	docker-compose exec -u laradock workspace bash
+	```
 
-In laradock's directory.
+6. Install composer dependencies.
+	```bash
+	composer i
+	```
 
-- Build the environment and run it using docker-compose.
-```bash
-docker-compose up -d nginx
-```
+7. Migrate the database.
+	```bash
+	touch database/database.sqlite
+	php artisan migrate:install
+	```
 
-- Enter the Workspace container, to execute commands like (Artisan, Composer, PHPUnit, Gulp, …)
-```bash
-# With laradock user
-docker-compose exec -u laradock workspace bash
-```
+8. Generate your application encryption key using:
+	```bash
+	php artisan key:generate
+	```
+
+9. Enjoy!
