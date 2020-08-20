@@ -29,7 +29,7 @@ Reference: https://laradock.io/getting-started/
 	```
 	APP_CODE_PATH_HOST=/path/to/laravel-test/
 	```
-	In the project, Edit the configuration for this project.
+	In the project, edit the configuration for this project.
 	```
 	cp .env.example .env
 	```
