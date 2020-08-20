@@ -14,15 +14,15 @@ Reference: https://laradock.io/getting-started/
 #### Installation
 
 1. Clone the laradock repository:
-	```bash
+	```
 	git clone https://github.com/laradock/laradock.git
 	```
 2. Clone this repository:
-	```bash
+	```
 	git clone https://github.com/fsh0524/laravel-test.git
 	```
 3. In laradock, edit your web server sites configuration.
-	```bash
+	```
 	cp env-example .env
 	```
 	At the top, change the `APP_CODE_PATH_HOST` variable to the project path.
@@ -42,28 +42,28 @@ Reference: https://laradock.io/getting-started/
 	```
 
 5. In laradock's directory, build the environment and run it using docker-compose.
-	```bash
+	```
 	docker-compose up -d nginx
 	```
 	Enter the Workspace container, to execute commands like (Artisan, Composer, PHPUnit, Gulp, …)
-	```bash
+	```
 	# With laradock user
 	docker-compose exec -u laradock workspace bash
 	```
 
 6. Install composer dependencies.
-	```bash
+	```
 	composer i
 	```
 
 7. Migrate the database.
-	```bash
+	```
 	touch database/database.sqlite
 	php artisan migrate:install
 	```
 
 8. Generate your application encryption key using:
-	```bash
+	```
 	php artisan key:generate
 	```
 
