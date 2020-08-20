@@ -67,4 +67,4 @@ Reference: https://laradock.io/getting-started/
 	php artisan key:generate
 	```
 
-9. Enjoy!
+9. Check http://localhost:80/ for the web application.
