@@ -33,13 +33,13 @@ Reference: https://laradock.io/getting-started/
 	```
 	cp .env.example .env
 	```
-	- (Optional) Change the port that nginx will use.
-        If there are already some services using the port, you may want to change this.
-		```
-		# Change the port number to whatever you want.
-		NGINX_HOST_HTTP_PORT=80
-		NGINX_HOST_HTTPS_PORT=443
-		```
+4. (Optional) Change the port that nginx will use.
+    If there are already some services using the port, you may want to change this.
+	```
+	# Change the port number to whatever you want.
+	NGINX_HOST_HTTP_PORT=80
+	NGINX_HOST_HTTPS_PORT=443
+	```
 
 #### Usage
 
